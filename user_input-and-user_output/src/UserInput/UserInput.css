@@ -1,0 +1,5 @@
+.UserInput input[type="text"] {
+  margin: 10px;
+  border: 1px solid blue;
+  padding: 8px;
+}
