@@ -22,7 +22,11 @@ class App extends Component {
   render() {
     let charList = this.state.string.split("").map((ch, index) => {
       return (
-        <Char char={ch} clicked={index => this.removeCharHandler(index)} />
+        <Char
+          char={ch}
+          clicked={index => this.removeCharHandler(index)}
+          key={index}
+        />
       );
     });
     return (
