@@ -24,7 +24,7 @@ class App extends Component {
       return (
         <Char
           char={ch}
-          clicked={index => this.removeCharHandler(index)}
+          clicked={() => this.removeCharHandler(index)}
           key={index}
         />
       );
@@ -65,7 +65,7 @@ class App extends Component {
         <input
           type="text"
           onChange={this.inputChangeHandler}
-          value={this.state.strin}
+          value={this.state.string}
         />
         <p>{this.state.string}</p>
         <Validation length={this.state.string.length} />
